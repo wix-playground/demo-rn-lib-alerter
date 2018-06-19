@@ -23,6 +23,8 @@ public class RNAlerterPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-      return Collections.emptyList();
+        return Arrays.<ViewManager> asList(
+                new RNAlerterViewManager()
+        );
     }
 }
